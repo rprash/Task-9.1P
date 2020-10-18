@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efefef;
+  width: 100%;
+}
+.hamburger-div {
+  display: none;
+  padding: 0 40px;
+}
+.hamburger-div img {
+  width: 30px;
+  height: auto;
+}
+
+.logo-div{
+  width: 150px;
+  height: auto;
+  margin: 0 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.navigation-div {
+  display: inline-block;
+}
+
+.navigation-div a {
+  text-decoration: none;
+  margin: 0 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.sign-up-button-div {
+  padding: 0 40px;
+}
+
+.sign-up-button-div button.sign-up-button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  background-color: gray;
+}
+
+.slider {
+  margin: 20px;
+  width: 100%;
+  /* height: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider img {
+  width: 100%;
+  height: 600px;
+}
+
+.detail-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.detail-section-heading {
+  font-size: 40px;
+}
+
+.cards-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.single-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px 60px;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+}
+.card-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-heading {
+  font-size: 23px;
+  margin: 15px;
+}
+
+.card-description {
+  margin: 0;
+  text-align: justify;
+  line-height: 25px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #efefef;
+  padding: 20px 0;
+}
+
+.newsletter-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-heading {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.newsletter-input {
+  padding: 5px;
+  width: 200px;
+}
+
+.newsletter-button {
+  border: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  background-color: gray;
+  margin: 0 10px;
+}
+
+.icons-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-heading {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.icon-img {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+}
+
+@media (max-width: 1112px) {
+  .hamburger-div {
+    display: inline-block;
+  }
+
+  .navigation-div {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger-div {
+    padding: 0 10px;
+  }
+  .sign-up-button-div {
+    padding: 0 10px;
+  }
+
+  .sign-up-button-div button.sign-up-button {
+    padding: 5px 12px;
+  }
+
+  .slider img {
+    height: 200px;
+  }
+
+  .detail-section-heading {
+    font-size: 25px;
+  }
+  .cards-div {
+    margin-top: 40px;
+  }
+
+  .single-card {
+    margin: 30px 0;
+  }
+
+  .card-img {
+    width: 80%;
+  }
+
+  .card-description {
+    padding: 0 20px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .newsletter-div {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .newsletter-div * {
+    margin: 10px 0;
+  }
+
+  .icons-div {
+    flex-direction: column;
+  }
+  .icons-div * {
+    margin: 10px 0;
+  }
+
+  .icons-div img {
+    margin: 10px 10px;
+  }
+}
